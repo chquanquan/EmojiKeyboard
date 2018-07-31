@@ -11,6 +11,12 @@ sometimes you want to customer your style, add net sync function, change emoji s
 
 # ScreenShots
 
+![screenshots](https://github.com/chquanquan/EmojiKeyboard/blob/master/demo.png)
+
+## demo GIF
+![screenshots GIF](https://github.com/chquanquan/EmojiKeyboard/blob/master/demo.gif)
+
+
 # Usage
 
 * clone this repo.
