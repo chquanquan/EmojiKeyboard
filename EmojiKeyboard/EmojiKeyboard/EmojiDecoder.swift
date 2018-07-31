@@ -46,7 +46,7 @@ class EmojiDecoder {
     }
     
     private func initProperty() {
-        emojiTags = EmojiHelper.getEmojiTag()
+        emojiTags = EmojiHelper.getDefalultEmojiNames()
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 4
         let dict = [NSAttributedStringKey.font: font!, NSAttributedStringKey.paragraphStyle: paragraphStyle]

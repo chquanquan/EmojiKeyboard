@@ -40,14 +40,14 @@ struct EmojiHelper {
         return nil
     }
     
-    static func getEmojiCount() -> Int {
+    static func getDefalultEmojiCount() -> Int {
         if let path = Bundle.main.path(forResource: "EmojiKeyboard.bundle/com.sina.emoji", ofType: "plist"), let emojis = NSArray(contentsOfFile: path) as? [[String: String]] {
             return emojis.count
         }
         return 0
     }
     
-    static func getEmojiTag() -> [String] {
+    static func getDefalultEmojiNames() -> [String] {
         if let path = Bundle.main.path(forResource: "EmojiKeyboard.bundle/com.sina.emoji", ofType: "plist"), let emojis = NSArray(contentsOfFile: path) as? [[String: String]] {
             return emojis.map({ (dict) -> String in
                 return dict["image"]!

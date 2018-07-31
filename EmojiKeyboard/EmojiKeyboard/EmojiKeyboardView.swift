@@ -262,7 +262,7 @@ class EmojiKeyboardView: UIView {
         let type = categories[index]
         switch type {
         case .default:
-            count = EmojiHelper.getEmojiCount()
+            count = EmojiHelper.getDefalultEmojiCount()
         case .favorite:
             count = EmojiHelper.getGifCount() + 1 // first is function button
         }

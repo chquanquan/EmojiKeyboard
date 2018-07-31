@@ -24,6 +24,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.becomeFirstResponder()
+        
+        // preload default emoji resource from bundle
+        DispatchQueue.main.async {
+            let imageView = UIImageView()
+            for imageName in EmojiHelper.getDefalultEmojiNames() {
+                imageView.image = EmojiHelper.getDefaultEmojiImage(with: imageName)
+            }
+        }
+        
+        
     }
     
     func sendEmojiText() {
@@ -65,6 +75,7 @@ class ViewController: UIViewController {
 
 
 extension ViewController: EmojiKeyboardViewDelegate {
+    
     func KeyboardView(_ KeyboardView: EmojiKeyboardView, use emoji: EmojiViewModel) {
         if emoji.type == .default {
             EmojiHelper.insertEmoji(for: textView, defaultEmojiImageName: emoji.defaultEmojiImageName!, desc: emoji.desc!)
