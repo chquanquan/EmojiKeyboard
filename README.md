@@ -67,7 +67,7 @@ extension ViewController: EmojiKeyboardViewDelegate {
  
  request authorization before access album. (emojiKeyboard already do.)
  
- first use EmojiKeyboard it will take some time load image Resouces from bundle, so I think you should preload the default   emoji sources to  menory.
+ first use EmojiKeyboard it will take some time load image Resouces from bundle, so I think you should preload the default   emoji sources to  menory. just like demo do.
 
 # License
 
