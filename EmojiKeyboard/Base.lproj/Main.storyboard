@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EmojiKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPd-yU-vPH">
+                                <rect key="frame" x="16" y="281" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.10588235294117647" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gle-da-ZFi"/>
+                                    <constraint firstAttribute="width" constant="50" id="vHC-XY-km2"/>
+                                </constraints>
+                                <state key="normal" image="emoji"/>
+                                <state key="selected" image="keyboard"/>
+                                <connections>
+                                    <action selector="changeKeyboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8S-sp-A1i"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DuX-4t-xLL">
+                                <rect key="frame" x="86" y="266" width="273" height="80"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.10588235294117647" blue="0.37647058823529411" alpha="0.19744318181818182" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Xds-AP-TJY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="send"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NbZ-2f-RWf"/>
+                                </connections>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEQ-GR-aBI">
+                                <rect key="frame" x="86" y="50" width="273" height="80"/>
+                                <color key="backgroundColor" red="0.31764705882352939" green="0.1764705882352941" blue="0.6588235294117647" alpha="0.20012784090909094" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="fDj-UG-LU7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="cmT-jl-s4M" customClass="YYAnimatedImageView">
+                                <rect key="frame" x="86" y="146" width="273" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="KSr-jT-hDI"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikc-rm-hBt">
+                                <rect key="frame" x="16" y="65" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.31764705882352939" green="0.1764705882352941" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Pzk-md-Fbm"/>
+                                    <constraint firstAttribute="width" constant="50" id="uK6-xF-Sw1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="18"/>
+                                <state key="normal" title="clear">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n1u-gl-P98"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zPd-yU-vPH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="CDI-Ot-wH4"/>
+                            <constraint firstItem="cmT-jl-s4M" firstAttribute="trailing" secondItem="lEQ-GR-aBI" secondAttribute="trailing" id="DBt-o0-DaX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DuX-4t-xLL" secondAttribute="trailing" constant="16" id="Rdc-Kx-5Eq"/>
+                            <constraint firstItem="lEQ-GR-aBI" firstAttribute="leading" secondItem="ikc-rm-hBt" secondAttribute="trailing" constant="20" id="TnP-63-BK6"/>
+                            <constraint firstItem="DuX-4t-xLL" firstAttribute="top" secondItem="cmT-jl-s4M" secondAttribute="bottom" constant="20" id="UEi-xD-BIF"/>
+                            <constraint firstItem="ikc-rm-hBt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UqO-gU-DCR"/>
+                            <constraint firstItem="lEQ-GR-aBI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Vz8-iZ-Ywt"/>
+                            <constraint firstItem="zPd-yU-vPH" firstAttribute="centerY" secondItem="DuX-4t-xLL" secondAttribute="centerY" id="Wsu-Uf-JFa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lEQ-GR-aBI" secondAttribute="trailing" constant="16" id="YkE-d1-9ME"/>
+                            <constraint firstItem="DuX-4t-xLL" firstAttribute="leading" secondItem="zPd-yU-vPH" secondAttribute="trailing" constant="20" id="h61-5m-xtU"/>
+                            <constraint firstItem="cmT-jl-s4M" firstAttribute="leading" secondItem="lEQ-GR-aBI" secondAttribute="leading" id="hNr-lo-OTy"/>
+                            <constraint firstItem="cmT-jl-s4M" firstAttribute="top" secondItem="lEQ-GR-aBI" secondAttribute="bottom" constant="16" id="xND-oC-HAT"/>
+                            <constraint firstItem="ikc-rm-hBt" firstAttribute="centerY" secondItem="lEQ-GR-aBI" secondAttribute="centerY" id="xwo-Qc-ywi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="cmT-jl-s4M" id="hKs-yT-hm0"/>
+                        <outlet property="textLabel" destination="lEQ-GR-aBI" id="zfR-rG-e7V"/>
+                        <outlet property="textView" destination="DuX-4t-xLL" id="uS8-D4-nXJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="emoji" width="40" height="40"/>
+        <image name="emoji_placeholder" width="80" height="80"/>
+        <image name="keyboard" width="40" height="40"/>
+    </resources>
+</document>
