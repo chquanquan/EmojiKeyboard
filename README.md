@@ -9,6 +9,8 @@ Emoji keyboard, custom emoji, gif, preview.
 
 sometimes you want to customer your style, add net sync function, change emoji sources. if you need some help, just send me Email: `380341629@qq.com`.
 
+## [中文说明](https://blog.csdn.net/ch_quan/article/details/81329145)
+
 # ScreenShots
 
 ![screenshots](https://github.com/chquanquan/EmojiKeyboard/blob/master/demo.png)
