@@ -7,7 +7,7 @@ Emoji keyboard, custom emoji, gif, preview.
 
 [EmojiKeyboard](https://github.com/chquanquan/EmojiKeyboard) is a keyboard for `iOS` IM. contain emoji and GIF, preview function. manager emoji such as: add image or GIF from album. delete, drag to reorder.  Support plainText convert Emoji attributeText, emoji attributeText convert plainText.
 
-sometimes you want to customer your style, add net sync function, change emoji sources. if you need some help, just send me Email: `380341629@qq.com`.
+sometimes you want to customer your style, add net sync function, change emoji sources. if you need some help, just send me Email: `quan78886@qq.com`.
 
 ## [中文说明](https://blog.csdn.net/ch_quan/article/details/81329145)
 
